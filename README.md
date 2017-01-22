@@ -1,6 +1,16 @@
-# Angular
+#Angular Http Experiment
 
-This repository holds my AngularJs 2 experiments code in two parts.
+This experiment covers angular http in details:
 
-1. The angular-tour-of-hero is an overview experiment of AngularJs 2
-2. The angular-http experiment goes into the Angular Http module in details
+1. A HTTP client demo.
+2. Fetch data with http.get.
+3. RxJS library.
+4. Enable RxJS operators.
+5. Process the response object.
+6. Handle errors.
+7. Send data to the server.
+8. Fall back to promises.
+9. Cross-Origin Requests: Wikipedia example.
+10. Search parameters.
+11. More fun with observables.
+12. in-memory web api.

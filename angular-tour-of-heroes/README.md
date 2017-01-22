@@ -1,5 +1,5 @@
 # Angular Tour of Heroes
-This best way to learn is to reorganise it and then teach it.
+This best way to learn something is to reorganise it and then teach it.
 
 ##This experiment gives an overview of AngularJs 2. 
 
