@@ -5,15 +5,15 @@ This best way to learn something is reorganise it and then teach it
 angular-tour-of-hero is an introductory level experiment of AngularJs 2, which discovers core fundamentals of AngularJs 2.
 The rest of experiments goes into different parts of Angular in details. 
 
-[1. Overview Experiment](#Overview)
+* [1. Overview Experiment](#Overview)
 
-[2. Forms Experiment](#Forms)
+* [2. Forms Experiment](#Forms)
 
-    [2.1  Form with Animation](#FormAnimation)
+    * [2.1  Form with Animation](#FormAnimation)
 	
-    [2.2 Hierarchical Forms & Component Communication](#Communication)
+    * [2.2 Hierarchical Forms and Component Communication](#Communication)
 
-[3. Http Experiment](#Http)
+* [3. Http Experiment](#Http)
 
 <h2 id='Overview'> Angular Overview Experiment </h2> 
 It contains subjects such as :
