@@ -9,9 +9,9 @@ The rest of experiments goes into different parts of Angular in details.
 
 [2. Forms Experiment](#Forms)
 
-2.1 [Form with Animation](#FormAnimation)
+    [2.1  Form with Animation](#FormAnimation)
 	
-2.2 [Hierarchical Forms & Component Communication](#Communication)
+    [2.2 Hierarchical Forms & Component Communication](#Communication)
 
 [3. Http Experiment](#Http)
 
