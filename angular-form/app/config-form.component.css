@@ -1,0 +1,21 @@
+@keyframes MyAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+.my-animation {
+  animation: MyAnimation 1s; }
+
+@keyframes Special {
+  0% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(0); } }
+.special {
+  animation: Special 3s; }
+
+/*# sourceMappingURL=config-form.component.css.map */

@@ -1,0 +1,62 @@
+import {
+  Component,
+  Input,
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/core';
+
+import { Heroes } from './hero.service';
+
+@Component({
+  moduleId: module.id,
+  selector: 'hero-list-timings',
+  template: `
+    <ul>
+      <li *ngFor="let hero of heroes"
+          [@flyInOut]="'in'"
+          (click)="hero.toggleState()">
+         {{hero.name}}
+      </li>
+    </ul>
+  `,
+  styleUrls: ['hero-list.component.css'],
+  /* The element here always has the state "in" when it
+   * is present. We animate two transitions: From void
+   * to in and from in to void, to achieve an animated
+   * enter and leave transition. The element enters from
+   * the left and leaves to the right using translateX,
+   * and fades in/out using opacity. We use different easings
+   * for enter and leave.
+   */
+  animations: [
+    trigger('flyInOut', [
+      state('in', style({opacity: 1, transform: 'translateX(0)'})),
+      transition('void => *', [
+        style({
+          opacity: 0,
+          transform: 'translateX(-100%)'
+        }),
+        animate('0.2s ease-in')
+      ]),
+      transition('* => void', [
+        animate('2s 10 ease-out', style({
+          opacity: 0,
+          transform: 'translateX(100%)'
+        }))
+      ])
+    ])
+  ]
+})
+export class HeroListTimingsComponent {
+  @Input() heroes: Heroes;
+}
+
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

@@ -1,0 +1,20 @@
+<div class="container" [@formState]="getState()">
+  <h1>hello treatment</h1>
+
+  <form  #treatment="ngForm" name="myTreatment" novalidate>
+    <div class="form-group" *ngFor="let treatment of  getTreatments(); let i = index; trackBy:trackByIndex"
+         [@flyInOut]="'in'">
+      <treatment-component [index]="i" [headers]="getTreatmentHeaders()" [treatment] = treatment
+                           [treatmentTypes]="treatmentTypes" (deleteTreatment)="deleteTreatment($event)">
+      </treatment-component>
+    </div>
+  </form>
+
+  <div class="row">
+    <button  class="btn btn-default" type="submit" (click)="changeState(1)">Previous</button>
+    <button (click)="newTreatment()" class="btn btn-default"
+            type="button" >New Treatment</button>
+    <!--button  class="btn btn-default" type="submit"
+             [disabled]="(!treatment.form.valid) || validCheck()">Submit</button-->
+  </div>
+</div>

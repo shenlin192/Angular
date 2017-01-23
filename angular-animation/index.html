@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill for Web Animations -->
+    <script src="https://unpkg.com/web-animations-js@2.2.1"></script>
+
+    <!-- Polyfills for older browsers -->
+    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+
+    <script src="https://unpkg.com/zone.js@0.6.25?main=browser"></script>
+    <script src="https://unpkg.com/reflect-metadata@0.1.8"></script>
+    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+
+    <script src="https://cdn.rawgit.com/angular/angular.io/b3c65a9/public/docs/_examples/_boilerplate/systemjs.config.web.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <h1 style="visibility: hidden;">External H1 Title for E2E test</h1>
+    <hero-team-builder></hero-team-builder>
+    <button style="visibility: hidden;">External button for E2E test</button>
+    <ul style="visibility: hidden;">
+      <li>External list for E2E test</li>
+    </ul>
+  </body>
+
+</html>
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

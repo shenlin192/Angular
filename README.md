@@ -1,6 +1,37 @@
-#Angular Http Experiment
+#Angular
+This best way to learn something is reorganise it and then teach it
 
-This experiment covers angular http in details:
+##This repository holds my AngularJs 2 experiments codes 
+angular-tour-of-hero is an introductory level experiment of AngularJs 2, which discovers core fundamentals of AngularJs 2.
+
+The rest of experiments goes into different parts of Angular in details.
+
+### Angular Overview Experiment
+It contains subjects such as :
+
+1. Templates
+2. Directives
+3. Components
+4. Multiple Components
+5. Services
+6. Routings
+7. Http
+
+These are the the core fundamentals of AngularJs 2. 
+
+We can use built-in directives to show/hide elements and display lists of hero data. We can create a component to display hero details and another to show an array of heroes. We can use one-way data binding for read-only data. We can add editable fields to update a model with two-way data binding. We can bind component methods to user events like key strokes and clicks. We can select a hero from a master list and edit that hero in the details view. We can format data with pipes. We can create a shared service to assemble our heroes. And we can use routing to navigate among different views and their components. 
+
+This experiment covers a lot of ground at an introductory level but other experiment will take us in greater depth.
+
+
+###Angular Http Experiment
+HTTP is the primary protocol for browser/server communication.
+
+Modern browsers support two HTTP-based APIs: XMLHttpRequest (XHR) and JSONP. A few browsers also support Fetch.
+
+The Angular HTTP library simplifies application programming with the XHR and JSONP APIs.
+
+This experiment covers angular http in details of the following topics:
 
 1. A HTTP client demo.
 2. Fetch data with http.get.
@@ -12,5 +43,19 @@ This experiment covers angular http in details:
 8. Fall back to promises.
 9. Cross-Origin Requests: Wikipedia example.
 10. Search parameters.
-11. More fun with observables.
+11. Observables.
 12. in-memory web api.
+
+### Angular Forms Experiment
+A form creates a cohesive, effective, and compelling data entry experience. 
+An Angular form coordinates a set of data-bound user controls, 
+tracks changes, validates input, and presents errors.
+
+This experiment covers:
+
+1. build an Angular form with a component and template
+2. two-way data bind with `[(ngModel)]` syntax for reading and writing values to input controls
+3. track the change state and validity of form controls using `ngModel` in combination with a form
+4. provide strong visual feedback using special CSS classes that track the state of the controls
+5. display validation errors to users and enable/disable form controls
+6. use template reference variables for sharing information among HTML elements

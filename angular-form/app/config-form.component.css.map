@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;IAEI,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,QAAQ;;IAEnB,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,QAAQ;AAEvB,aAAa;EACX,SAAS,EAAE,cAAc;;;;IAKvB,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,QAAQ;;IAEnB,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,QAAQ;AAEvB,QAAQ;EACN,SAAS,EAAE,UAAU",
+"sources": ["config-form.component.sass"],
+"names": [],
+"file": "config-form.component.css"
+}

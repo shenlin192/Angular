@@ -1,0 +1,32 @@
+  <h2>Treatment{{index+1}}</h2>
+
+  <button type="button" class="close" aria-label="Close" (click)="deleteEvent()"><span aria-hidden="true">&times;</span></button>
+
+  <div class="form-group">
+    <label for="header{{index}}">Header</label>
+    <select  id="header{{index}}" required class=form-control
+             [ngModel]="treatment.header"
+             (ngModelChange)="onChangeHeader($event)"
+             [(ngModel)]="treatment.header" name="header{{index}}" >
+      <option *ngFor="let header of headers" [value]="header">{{header}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for= "treatmentType{{index}}">Type</label>
+    <select id= "treatmentType{{index}}" required class=form-control
+            [ngModel]="treatment.type"
+            (ngModelChange)="onChangeType($event)" name="type{{index}}">
+      <option *ngFor="let type of treatmentTypes" [value]="type">{{type}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="location{{index}}">Location</label>
+    <input type="number" id= "location{{index}}" class="form-control" required
+           [(ngModel)]="treatment.location" name="location{{index}}" #location="ngModel">
+    <div [hidden]="location.valid||location.pristine" class="alert alert-danger">
+      Location is required
+    </div>
+  </div>
+
