@@ -6,6 +6,10 @@ angular-tour-of-hero is an introductory level experiment of AngularJs 2, which d
 The rest of experiments goes into different parts of Angular in details. 
 
 [Overview Experiment](#Overview)
+[Forms Experiment](#Forms)
+	[Form with Animation](#FormAnimation)
+	[Hierarchical Forms & Component Communication](#Communication)
+[Http Experiment](#Http)
 
 <h2 id='Overview'> Angular Overview Experiment </h2> 
 It contains subjects such as :
@@ -24,7 +28,7 @@ We can use built-in directives to show/hide elements and display lists of hero d
 
 This experiment covers a lot of ground at an introductory level but other experiment will take us in greater depth.
 
-## Angular Forms Experiment
+<h2 id='Forms'>Angular Forms Experiment</h2> 
 A form creates a cohesive, effective, and compelling data entry experience. 
 An Angular form coordinates a set of data-bound user controls, 
 tracks changes, validates input, and presents errors.
@@ -38,7 +42,7 @@ Initial goal of this experiment is to cover the following Angular form topics:
 5. display validation errors to users and enable/disable form controls
 6. use template reference variables for sharing information among HTML elements
 
-## Forms with Animation
+<h4 id='FormAnimation'> Form with Animation</h4>
 As the progress of this project, I just can't help trying out something new. So I add different kinds of 
 animation for each form including:
 
@@ -48,7 +52,7 @@ animation for each form including:
 4. Animation timing in `ConfigFormComponent`, `TypeFormComponet` and `TreatmentFormComponet`.
 5. Parallel animation groups in `TreatmentFormComponet`.
  
-#### Hierarchical Forms (Component Communication)
+<h4 id='Communication'> Hierarchical Forms & Component Communication </h4>
 Moreover, the `TreatmentFormComponet` is make up of `TreatmentComponent`s. So we need a way to communicate 
 between the parent component and its children components. This experiment covers the following ways of communication:
 
@@ -60,8 +64,7 @@ Moreover, it's worth noting that `ConfigFormComponent`, `TypeFormComponet` and `
 are brothers and I link them by two services: `FormDataService` and `FormStateService`. 
 
 
-
-##Angular Http Experiment
+<h2 id='Http'>Angular Http Experiment</h2> 
 HTTP is the primary protocol for browser/server communication.
 
 Modern browsers support two HTTP-based APIs: XMLHttpRequest (XHR) and JSONP. A few browsers also support Fetch.
