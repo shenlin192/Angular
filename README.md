@@ -1,5 +1,5 @@
 #Angular
-This best way to learn something is reorganise it and then teach it
+This best way to learn something is to reorganise it and then teach it
 
 ##This repository holds my AngularJs 2 experiments codes 
 angular-tour-of-hero is an introductory level experiment of AngularJs 2, which discovers core fundamentals of AngularJs 2.
